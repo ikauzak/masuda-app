@@ -1,5 +1,6 @@
 FROM nginx:1.13.12
+LABEL maintainer "Bruno K. Masuda <bruno.masuda@agilitynetworks.com>"
 
 WORKDIR /etc/nginx/
 
-COPY --chown=root:root ./files/nginx.conf nginx.conf
+COPY ./files/nginx.conf nginx.conf
